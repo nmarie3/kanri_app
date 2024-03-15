@@ -34,14 +34,14 @@ function AppContainer() {
   // };
 
   const editProject = id => {
-    setProjects(projects.map(newProject=> newProject.id === id ? {
+    setProjects(projectname.map(newProject=> newProject.id === id ? {
       ...newProject, isEditing: !newProject.isEditing} : newProject
     ))
     console.log(editProject)
   }
 
   const editNewProject = (user, projectname, id) => {
-    setProjects(projects.map(newProject => newProject.id === id ? {
+    setProjects(project.map(newProject => newProject.id === id ? {
       ...newProject, user, projectname, isEditing: !newProject.isEditing} 
       : newProject
     ))

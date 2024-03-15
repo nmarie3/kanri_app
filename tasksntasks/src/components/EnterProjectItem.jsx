@@ -30,7 +30,7 @@ const handleChangeProject = (e) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        checkInput();
+        // checkInput();
         addProject(user, project);
         setUser("");
         setProject("");
